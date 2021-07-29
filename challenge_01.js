@@ -20,5 +20,12 @@ let number2 = prompt("Enter the second number: ");
 let sum = Number(number1) + Number(number2);
 
 // Ausgabe
-console.log("The sum of both numbers is: " + sum);
+if (isNaN(sum))
+{
+    console.log("The input was not a number. Please use format '5.5'.");
+}
+else
+{
+    console.log("The sum of both numbers is: " + sum);
+}
 
